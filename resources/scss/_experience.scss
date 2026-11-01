@@ -1,0 +1,377 @@
+.experience {
+    padding: 4rem 3%;
+
+    &-header {
+        max-width: 68rem;
+        margin: 0 auto 3rem;
+        text-align: center;
+
+        &-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: bold;
+            overflow-wrap: anywhere;
+        }
+
+        &-description {
+            margin-top: 1rem;
+            color: var(--color-muted);
+            line-height: 1.6;
+        }
+    }
+
+    &-list {
+        display: grid;
+        gap: 2rem;
+        max-width: 68rem;
+        margin: 0 auto;
+    }
+
+    &-card {
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+        border-radius: 1.25rem;
+        background: var(--color-surface);
+
+        &-layout {
+            display: grid;
+            grid-template-columns: minmax(15rem, 0.8fr) minmax(0, 2fr);
+        }
+    }
+
+    &-company {
+        padding: 2rem;
+        border-right: 1px solid var(--color-border);
+        background: color-mix(in srgb, var(--color-accent) 4%, var(--color-surface));
+
+        &-mark {
+            display: inline-grid;
+            place-items: center;
+            width: 3.75rem;
+            height: 3.75rem;
+            border: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
+            border-radius: 1rem;
+            background: color-mix(in srgb, var(--color-accent) 12%, var(--color-surface));
+            color: var(--color-link);
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+        }
+
+        &-name {
+            margin: 1rem 0 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        &-location {
+            margin: 0.25rem 0 0;
+            color: var(--color-muted);
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+    }
+
+    &-facts {
+        display: grid;
+        gap: 0.9rem;
+        margin: 1.75rem 0;
+
+        > div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.35rem 0.75rem;
+            font-size: 0.8rem;
+            line-height: 1.5;
+        }
+
+        dt {
+            color: var(--color-subtle);
+        }
+
+        dd {
+            margin: 0;
+            font-weight: 500;
+        }
+    }
+
+    &-technologies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.45rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            padding: 0.3rem 0.55rem;
+            border: 1px solid color-mix(in srgb, var(--color-accent) 25%, transparent);
+            border-radius: 0.45rem;
+            background: var(--color-surface);
+            color: var(--color-tag);
+            font-size: 0.7rem;
+            line-height: 1.5;
+        }
+    }
+
+    &-private {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1.5rem 0 0;
+        color: var(--color-subtle);
+        font-size: 0.7rem;
+        line-height: 1.5;
+
+        svg {
+            width: 1rem;
+            height: 1rem;
+            flex-shrink: 0;
+        }
+    }
+
+    &-work {
+        min-width: 0;
+        padding: 2rem;
+    }
+
+    &-type {
+        margin: 0 0 0.75rem;
+        color: var(--color-link);
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &-role {
+        margin: 0;
+        font-size: clamp(1.35rem, 2.2vw, 1.75rem);
+        letter-spacing: -0.025em;
+        line-height: 1.3;
+    }
+
+    &-project {
+        margin: 0.65rem 0 0;
+        font-size: 0.95rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+
+    &-summary {
+        margin: 0.85rem 0 1.75rem;
+        color: var(--color-muted);
+        font-size: 0.85rem;
+        line-height: 1.8;
+    }
+
+    &-contributions-title {
+        margin: 0 0 1rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    &-contributions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        > li {
+            display: flex;
+            align-items: start;
+            gap: 0.65rem;
+            min-width: 0;
+        }
+
+        h5 {
+            margin: 0;
+            font-size: 0.8rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        p {
+            margin: 0.5rem 0 0;
+            color: var(--color-muted);
+            font-size: 0.8rem;
+            line-height: 1.7;
+        }
+    }
+
+    &-contribution-number {
+        margin-top: 0.2rem;
+        color: var(--color-link);
+        font-family: monospace;
+        font-size: 0.65rem;
+    }
+
+    &-details {
+        border-top: 1px solid var(--color-border);
+
+        > summary {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            min-height: 3.5rem;
+            padding: 0.3rem 2rem;
+            list-style: none;
+            cursor: pointer;
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            &::marker {
+                content: "";
+            }
+
+            &:hover {
+                background: color-mix(in srgb, var(--color-accent) 5%, var(--color-surface));
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--color-accent);
+                outline-offset: -5px;
+                border-radius: 0.75rem;
+            }
+
+            > svg {
+                width: 1.1rem;
+                height: 1.1rem;
+                margin-left: auto;
+                flex-shrink: 0;
+                color: var(--color-link);
+            }
+        }
+
+        &-label {
+            color: var(--color-link);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        &-hint {
+            color: var(--color-subtle);
+            font-size: 0.75rem;
+        }
+
+        &-open {
+            display: none;
+        }
+
+        &[open] {
+            .experience-details-closed {
+                display: none;
+            }
+
+            .experience-details-open {
+                display: inline;
+            }
+
+            > summary > svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &-case {
+        display: grid;
+        gap: 1.5rem;
+        padding: 1rem 2rem 2rem;
+        border-top: 1px solid var(--color-border);
+
+        h4 {
+            margin: 0 0 0.6rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        p,
+        ul {
+            margin: 0;
+            color: var(--color-muted);
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            display: grid;
+            gap: 0.5rem;
+            padding-left: 1.2rem;
+        }
+    }
+
+    &-result {
+        padding: 1.25rem;
+        border-left: 2px solid var(--color-accent);
+        border-radius: 0 0.6rem 0.6rem 0;
+        background: color-mix(in srgb, var(--color-accent) 6%, var(--color-surface));
+    }
+
+    @media (max-width: 60rem) {
+        &-company,
+        &-work {
+            padding: 1.5rem;
+        }
+
+        &-contributions {
+            gap: 1.25rem;
+        }
+    }
+
+    @media (max-width: 48rem) {
+        &-card-layout {
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        &-company {
+            border-right: 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        &-facts {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            > div {
+                display: grid;
+                justify-content: start;
+            }
+        }
+
+        &-details-hint {
+            display: none;
+        }
+
+        &-details > summary {
+            padding-right: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        &-case {
+            padding: 1.5rem;
+        }
+    }
+
+    @media (max-width: 30rem) {
+        &-company,
+        &-work {
+            padding: 1.25rem;
+        }
+
+        &-contributions {
+            grid-template-columns: minmax(0, 1fr);
+        }
+
+        &-facts > div {
+            font-size: 0.7rem;
+        }
+
+        &-case {
+            padding: 1.25rem;
+        }
+    }
+}
