@@ -65,7 +65,7 @@ function createBall(x, y, color, logo, name) {
 }
 
 if (container) {
-    const positions = getSkillPositions(container.clientWidth, SKILLS.length);
+    const positions = getSkillPositions(container.clientWidth, SKILLS.length, container.clientHeight);
     const balls = SKILLS.map((skill, index) => createBall(
         positions[index].x,
         positions[index].y,

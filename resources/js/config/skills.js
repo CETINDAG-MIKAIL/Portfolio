@@ -35,4 +35,16 @@ export const SKILLS = [
         name: "JavaScript",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     },
+    {
+        name: "SQL",
+        logo: "images/skills/sql.svg",
+    },
+    {
+        name: "PL/SQL",
+        logo: "images/skills/plsql.svg",
+    },
+    {
+        name: "Firebase",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    },
 ];
