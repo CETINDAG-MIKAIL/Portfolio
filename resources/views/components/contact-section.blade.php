@@ -72,7 +72,7 @@
 
             <div class="contact-field contact-field--message">
                 <label for="contact-message">Votre message</label>
-                <textarea id="contact-message" name="message" rows="5" placeholder="Parlez-moi de votre projet ou de ce dont vous souhaitez discuter…" maxlength="5000" required></textarea>
+                <textarea id="contact-message" name="message" rows="5" placeholder="" maxlength="5000" required></textarea>
             </div>
 
             <button class="contact-submit" type="submit" @disabled(empty($contact['email']))>
