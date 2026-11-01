@@ -4,6 +4,7 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
+        "export:pages": "php scripts/export-pages.php",
         "dev": "vite"
     },
     "devDependencies": {

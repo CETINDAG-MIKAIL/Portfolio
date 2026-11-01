@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Portfolio | Mikail Cetindag</title>
+    <link rel="icon" href="{{ asset('favicon.ico') }}">
 
     <script>
         // Restaurer le thème avant l'affichage pour éviter un flash de couleur.
@@ -26,7 +27,7 @@
     <header class="header">
 
         <div class="header-left">
-            <a href="/" class="header-left-brand">
+            <a href="{{ rtrim(url('/'), '/') }}/" class="header-left-brand">
                 Mikail Cetindag
             </a>
         </div>
