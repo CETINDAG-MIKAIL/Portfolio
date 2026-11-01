@@ -21,7 +21,7 @@ return [
         'description' => 'Timber est une application conçue pour favoriser la concentration sur des périodes définies et encourager une productivité.',
         'image' => 'images/projects/Flora.png',
         'github' => 'https://github.com/CETINDAG-MIKAIL/Flutter',
-        'technologies' => ['Flutter', 'Dart'],
+        'technologies' => ['Flutter', 'Dart', 'Firebase'],
     ],
     [
         'title' => 'Danger, Bob-omb! Danger!',
